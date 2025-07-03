@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="المساعد الذكي">
-    <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoi2KfZhNmF2LPYp9i52K8g2KfZhNiw2YPZiiDYp9mE2YHZiNix2YoiLCJzaG9ydF9uYW1lIjoi2KfZhNmF2LPYp9i52K8g2KfZhNiw2YPZiiIsInN0YXJ0X3VybCI6Ii4vIiwiZGlzcGxheSI6ImZ1bGxzY3JlZW4iLCJiYWNrZ3JvdW5kX2NvbG9yIjoiIzY2N2VlYSIsInRoZW1lX2NvbG9yIjoiIzI1NjNlYiIsImljb25zIjpbeyJzcmMiOiJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUI0Yld4dWN6MGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSGRwWkhSb1BTSXlOVFlpSUdobGFXZG9kRDBpTWpVMklpQjJhV1YzUW05NFBTSXdJREFnTWpVMklESTFOaUkrUEhCaGRHZ2dabWxzYkQwaVl6QXVOakExTnpreU5UWXVOVGdnTWpVMklIUmxlSFFnTWpVMklESTFOaUlnWm1sc2JEMGlJek15WkRJeU5pSWdabTl1ZEMxemFYcGxQU0l4T0NJZ1ptOXVkQzEzWldsbGFIUTlJbUp2YkdRaVBqOHpQQzl3WVhSb1BqeHdZWFJvSUdROU9pSk5OUzQwTnlBeU1qSXVOVGdnTVRNdU5EVXROakZ1TkRVZ01USXVOVGd0TXpFdU5UY3RORGN1TlRVZ01USXVOVGd0TXpFdU5UY3RORGNsWm1sc2JEMGlJek5DVXpjZ05ESWlJR1p2Ym5RdGNtbHNZWFJwZG5VdElpSWdabTl1ZEMxemFYcGxQU0l4TWlJZ1ptOXVkQzEzWldsbGFIUTlJbUp2YkdRaVBqOHpQQzl3WVhSb1BqeHZjM1puUGc9PSIsInNpemVzIjoiMjU2eDI1NiIsInR5cGUiOiJpbWFnZS9zdmcreG1sIn1dfQ==">
+    <link rel="manifest" href="/pixelAi/manifest.json">
     
     <style>
         * {
@@ -2224,7 +2224,9 @@
         // ========= PWA Functions =========
         function setupPWA() {
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('data:text/javascript;base64,Ly8gU2VydmljZSBXb3JrZXIgZm9yIFBXQQpjb25zdCBDQUNIRV9OQU1FID0gJ2FpLWFzc2lzdGFudC12MSc7CmNvbnN0IHVybHNUb0NhY2hlID0gWycuLyddOwoKc2VsZi5hZGRFdmVudExpc3RlbmVyKCdpbnN0YWxsJywgKGV2ZW50KSA9PiB7CiAgZXZlbnQud2FpdFVudGlsKAogICAgY2FjaGVzLm9wZW4oQ0FDSEVfTkFNRSkKICAgICAgLnRoZW4oY2FjaGUgPT4gY2FjaGUuYWRkQWxsKHVybHNUb0NhY2hlKSkKICApOwp9KTsKCnNlbGYuYWRkRXZlbnRMaXN0ZW5lcignZmV0Y2gnLCAoZXZlbnQpID0+IHsKICBldmVudC5yZXNwb25kV2l0aCgKICAgIGNhY2hlcy5tYXRjaChldmVudC5yZXF1ZXN0KQogICAgICAudGhlbihyZXNwb25zZSA9PiByZXNwb25zZSB8fCBmZXRjaChldmVudC5yZXF1ZXN0KSkKICApOwp9KTs=').catch(err => console.log('SW registration failed'));
+                navigator.serviceWorker.register('/pixelAi/sw.js', {
+    scope: '/pixelAi/'
+});
             }
 
             window.addEventListener('beforeinstallprompt', (e) => {
