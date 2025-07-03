@@ -1,8 +1,8 @@
 {
   "name": "المساعد الذكي الفوري",
   "short_name": "مساعد ذكي",
-  "description": "مساعد ذكي فوري مع GPT-4 Realtime API، توليد صور، تحليل الصور، وأخبار محدثة",
-  "start_url": "/pixelAi/index.html",
+  "description": "مساعد ذكي فوري مع GPT-4 Realtime API",
+  "start_url": "/pixelAi/",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#667eea",
@@ -10,130 +10,40 @@
   "lang": "ar",
   "dir": "rtl",
   "scope": "/pixelAi/",
-  "categories": ["productivity", "utilities", "education"],
-  "screenshots": [
-    {
-      "src": "/pixelAi/assets/screenshot1.png",
-      "sizes": "540x720",
-      "type": "image/png",
-      "form_factor": "narrow"
-    },
-    {
-      "src": "/pixelAi/assets/screenshot2.png", 
-      "sizes": "720x540",
-      "type": "image/png",
-      "form_factor": "wide"
-    }
-  ],
+  "categories": ["productivity", "utilities"],
   "icons": [
     {
-      "src": "/pixelAi/assets/icon-72x72.png",
-      "sizes": "72x72",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/pixelAi/assets/icon-96x96.png",
-      "sizes": "96x96",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/pixelAi/assets/icon-128x128.png",
-      "sizes": "128x128",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/pixelAi/assets/icon-144x144.png",
-      "sizes": "144x144",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/pixelAi/assets/icon-152x152.png",
-      "sizes": "152x152",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/pixelAi/assets/icon-192x192.png",
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiB2aWV3Qm94PSIwIDAgMTkyIDE5MiI+PHJlY3Qgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxOTIiIGZpbGw9IiM0RjQ2RTUiIHJ4PSI0OCIvPjx0ZXh0IHg9Ijk2IiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI4MCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjx0ZXh0IHk9IjEyMCI+8J+agjwvdGV4dD48L3RleHQ+PC9zdmc+",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable any"
+      "type": "image/svg+xml"
     },
     {
-      "src": "/pixelAi/assets/icon-384x384.png",
-      "sizes": "384x384",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/pixelAi/assets/icon-512x512.png",
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIGZpbGw9IiM0RjQ2RTUiIHJ4PSIxMjgiLz48dGV4dCB4PSIyNTYiIHk9IjMyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjx0ZXh0IHk9IjMyMCI+8J+agjwvdGV4dD48L3RleHQ+PC9zdmc+",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable any"
+      "type": "image/svg+xml"
     }
   ],
   "shortcuts": [
     {
       "name": "محادثة فورية",
-      "short_name": "محادثة",
       "description": "بدء محادثة فورية مع GPT-4",
-      "url": "/pixelAi/index.html#chat",
-      "icons": [
-        {
-          "src": "/pixelAi/assets/icon-96x96.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
+      "url": "/pixelAi/#chat"
     },
     {
       "name": "توليد صور",
-      "short_name": "صور",
       "description": "توليد صور بالذكاء الاصطناعي",
-      "url": "/pixelAi/index.html#images",
-      "icons": [
-        {
-          "src": "/pixelAi/assets/icon-96x96.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
+      "url": "/pixelAi/#images"
     },
     {
       "name": "تحليل الصور",
-      "short_name": "تحليل",
       "description": "تحليل الصور بالذكاء الاصطناعي",
-      "url": "/pixelAi/index.html#analysis",
-      "icons": [
-        {
-          "src": "/pixelAi/assets/icon-96x96.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
+      "url": "/pixelAi/#analysis"
     },
     {
       "name": "الأخبار",
-      "short_name": "أخبار",
       "description": "أحدث الأخبار العالمية",
-      "url": "/pixelAi/index.html#news",
-      "icons": [
-        {
-          "src": "/pixelAi/assets/icon-96x96.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
+      "url": "/pixelAi/#news"
     }
   ],
-  "prefer_related_applications": false,
-  "edge_side_panel": {
-    "preferred_width": 400
-  },
-  "launch_handler": {
-    "client_mode": "focus-existing"
-  }
+  "prefer_related_applications": false
 }
